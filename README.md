@@ -1,4 +1,3 @@
-
 # ZK Transfer Bot
 
 Bu proje, belirli bir Ethereum cüzdanına gelen tokenları otomatik olarak başka bir cüzdana transfer eden bir bottur. Proje, ethers.js ve Node.js kullanılarak geliştirilmiştir ve Dockerize edilmiştir.
@@ -14,15 +13,21 @@ Bu proje, belirli bir Ethereum cüzdanına gelen tokenları otomatik olarak baş
 
 1. Bu depoyu klonlayın:
 
+```sh
    git clone https://github.com/codeesura/zk-transfer-bot.git
+```
 
 2. Proje dizinine gidin:
 
+```sh
    cd zk-transfer-bot
+```
 
 3. Gerekli Node.js bağımlılıklarını yükleyin:
 
+```sh
    npm install
+```
 
 ## Yapılandırma
 
@@ -33,17 +38,17 @@ Projenin kök dizininde `config` klasörü altında iki yapılandırma dosyası 
 Bu dosya, cüzdan bilgilerini ve transfer edilecek adresleri içerir. Örneğin:
 
 {
-  "providerUrl": "YOUR_INFURA_OR_ALCHEMY_URL",
-  "wallets": [
-    {
-      "privateKey": "YOUR_PRIVATE_KEY_1",
-      "transferToAddress": "ADDRESS_TO_TRANSFER_TO_1"
-    },
-    {
-      "privateKey": "YOUR_PRIVATE_KEY_2",
-      "transferToAddress": "ADDRESS_TO_TRANSFER_TO_2"
-    }
-  ]
+"providerUrl": "YOUR_INFURA_OR_ALCHEMY_URL",
+"wallets": [
+{
+"privateKey": "YOUR_PRIVATE_KEY_1",
+"transferToAddress": "ADDRESS_TO_TRANSFER_TO_1"
+},
+{
+"privateKey": "YOUR_PRIVATE_KEY_2",
+"transferToAddress": "ADDRESS_TO_TRANSFER_TO_2"
+}
+]
 }
 
 ## Kullanım
@@ -52,17 +57,22 @@ Bu dosya, cüzdan bilgilerini ve transfer edilecek adresleri içerir. Örneğin:
 
 1. Projeyi başlatın:
 
+````sh
    npm i && npm start
 
 ### Docker ile Çalıştırma
 
 1. Docker imajını oluşturun:
 
+```sh
    docker build -t my-node-app .
+````
 
 2. Docker konteynerini çalıştırın:
 
+```sh
    docker run my-node-app
+```
 
 ## Kod Açıklaması
 
