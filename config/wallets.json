@@ -1,0 +1,13 @@
+{
+  "providerUrl": "https://zksync-rpc.felinaprotocol.io/",
+  "wallets": [
+    {
+      "privateKey": "afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890",
+      "transferToAddress": "0x5c3FB6a3B21AB47E07644EBCd68dd5aA01Ed9749"
+    },
+    {
+      "privateKey":"afdfd9c3d2095ef696594f6cedcae59e72dcd697e2a7521b1578140422a4f890",
+      "transferToAddress": "0x5c3FB6a3B21AB47E07644EBCd68dd5aA01Ed9749"
+    }
+  ]
+}

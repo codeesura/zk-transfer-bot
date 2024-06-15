@@ -1,0 +1,14 @@
+{
+  "name": "transfer-zk-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/monitor.js",
+  "scripts": {
+    "start": "node src/monitor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
