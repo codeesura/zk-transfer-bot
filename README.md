@@ -1,14 +1,13 @@
-
 # ZK Transfer Bot
 
-Bu proje, belirli bir Ethereum cüzdanına gelen tokenları otomatik olarak başka bir cüzdana transfer eden bir bottur. Proje, ethers.js ve Node.js kullanılarak geliştirilmiştir ve Dockerize edilmiştir.
+Bu proje, belirli bir zkSync cüzdanına gelen tokenları otomatik olarak başka bir cüzdana transfer eden bir bottur. Proje, ethers.js ve Node.js kullanılarak geliştirilmiştir ve Dockerize edilmiştir.
 
 ## Kurulum
 
 ### Gereksinimler
 
-- Node.js
-- Docker (opsiyonel)
+- [Node.js](https://nodejs.org/en/download/package-manager)
+- [Docker (opsiyonel)](https://www.docker.com/products/docker-desktop/)
 
 ### Adımlar
 
@@ -17,16 +16,19 @@ Bu proje, belirli bir Ethereum cüzdanına gelen tokenları otomatik olarak baş
 ```sh
    git clone https://github.com/codeesura/zk-transfer-bot.git
 ```
+
 2. Proje dizinine gidin:
 
 ```sh
    cd zk-transfer-bot
 ```
+
 3. Gerekli Node.js bağımlılıklarını yükleyin:
 
 ```sh
    npm install
 ```
+
 ## Yapılandırma
 
 Projenin kök dizininde `config` klasörü altında iki yapılandırma dosyası bulunmaktadır: `tokens.json` ve `wallets.json`. Tokens.json zaten yapılandırılmış bir dosyadır.
