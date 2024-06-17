@@ -4,7 +4,8 @@ const fs = require("fs");
 const config = JSON.parse(fs.readFileSync("./config/wallets.json"));
 const tokens = JSON.parse(fs.readFileSync("./config/tokens.json"));
 
-const provider = new ethers.providers.JsonRpcProvider(config.providerUrl);
+const chainId = 324 ; // ZKSync chain id , for ETH mainnet 1 
+const provider = new ethers.providers.StaticJsonRpcProvider(config.providerUrl , chainId);
 
 const tokenContract = new ethers.Contract(
   tokens.tokenAddress,
